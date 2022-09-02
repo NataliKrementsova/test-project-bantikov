@@ -1,0 +1,19 @@
+{
+    "name": "nk/test-project-bantikov",
+    "description": "Test task for Bantikov company",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "NK\\TestProjectBantikov\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "natalya.krementsova"
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "twig/twig": "^3.4"
+    }
+}

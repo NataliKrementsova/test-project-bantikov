@@ -1,0 +1,14 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.city {
+    padding-left: 20px;
+}
+
+.region {
+    margin-top: 16px;
+    padding-left: 30px;
+}

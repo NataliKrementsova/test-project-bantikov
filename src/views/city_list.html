@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ GlobRegion }}</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+{{ emptyInfo }}
+{% for countryName, countryProps in cityList %}
+<span title="{{ countryProps.countryDescr }}">{{ countryName }}</span>
+<ul>
+    {% for regionName, regionProps in countryProps.regions %}
+
+        {% if regionName == 0 %}
+
+                {% include 'cityTpl.html' %}
+        {% else %}
+        <li title="{{ regionProps.regionDescr }}" class="region">{{ regionName }}
+            <ul>
+                {% include 'cityTpl.html' %}
+            </ul>
+        </li>
+        {% endif %}
+    {% endfor %}
+</ul>
+{% endfor %}
+</body>
+</html>
